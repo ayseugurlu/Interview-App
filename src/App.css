@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(225deg,#9D2577,#2D5A9E);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.offcanvas-body{
+    border: 1rem solid #2D5A9E;
+    background-color: #9D2577;
+    
+    
+}
+
+.list-group-item:hover{
+    color:white;
+    background-color: #9D2577 !important;
+}
