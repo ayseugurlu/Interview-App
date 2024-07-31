@@ -51,19 +51,22 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/it-fundamental">IT-Fundamental</NavLink>
         </li>
         <li className="list-group-item bg-secondary-subtle border-danger-subtle">
-          <NavLink className="nav-link" to="html">HTML</NavLink>
+          <NavLink className="nav-link" to="/html">HTML</NavLink>
         </li>
         <li className="list-group-item bg-secondary-subtle border-danger-subtle">
-          <NavLink className="nav-link" to="css">CSS</NavLink>
+          <NavLink className="nav-link" to="/css">CSS</NavLink>
         </li>
         <li className="list-group-item bg-secondary-subtle border-danger-subtle">
-          <NavLink className="nav-link" to="bootstrap">Bootstrap</NavLink>
+          <NavLink className="nav-link" to="/bootstrap">Bootstrap</NavLink>
         </li>
         <li className="list-group-item bg-secondary-subtle border-danger-subtle">
-          <NavLink className="nav-link" to="sass">SASS</NavLink>
+          <NavLink className="nav-link" to="/sass">SASS</NavLink>
         </li>
         <li className="list-group-item bg-secondary-subtle border-danger-subtle">
-          <NavLink className="nav-link" to="javascript">JavaScript</NavLink>
+          <NavLink className="nav-link" to="/javascript">JavaScript</NavLink>
+        </li>
+        <li className="list-group-item bg-secondary-subtle border-danger-subtle">
+          <NavLink className="nav-link" to="/react">React</NavLink>
         </li>
       </ul>
     </div>
