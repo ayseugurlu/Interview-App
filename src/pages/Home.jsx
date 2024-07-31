@@ -6,7 +6,7 @@ const Home = () => {
    
 
   <div className='container text-center text-light font-monospace'>
-    <h1>Willkommen <br /> meine Interview Fragen App</h1>
+    <h1>Willkommen <br /> Interview Fragen App</h1>
   </div>
     </div>
   )
