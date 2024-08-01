@@ -9,6 +9,7 @@ import BootstrapQuestions from '../pages/BootstrapQuestions'
 import SassQuestions from '../pages/SassQuestions'
 import JavaScriptQuestions from '../pages/JavaScriptQuestions'
 import ReactQuestions from '../pages/ReactQuestions'
+import About from '../pages/About'
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
          <Navbar/>
          <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="/it-fundamental" element={<ITFundamental/>} />
           <Route path="/html" element={<HtmlQuestions/>}/>
           <Route path="/css" element={<CssQuestions/>}/>

@@ -3,32 +3,40 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='container d-flex justify-content-center'>
+    <div className='container-fluid col-sm-12  bg-black mb-5'>
 
-<div className='container text-center p-5'>
+<div className='w-100 text-end p-3'>
       <button
     className="btn btn-outline-warning"
     type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasExample"
-    aria-controls="offcanvasExample"
   >
-    Fragen
+  <NavLink to="/" className="nav-link">Home</NavLink>
+    
   </button>
       <button
     className="btn btn-outline-warning mx-3"
     type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasStart"
+    aria-controls="offcanvasExample"
+    data--bs-close="offcanvasExample"
+  >
+    Fragen
+  </button>
+      <button
+    className="btn btn-outline-warning"
+    type="button"
     
   >
-    About
+  <NavLink to="/about" className="nav-link">About</NavLink>
   </button>
-  </div>
+ 
   
   {/* Sidebar */}
   <div
-    className="offcanvas offcanvas-start"
+    className="offcanvas offcanvas-start text-start"
     tabIndex={-1}
-    id="offcanvasExample"
+    id="offcanvasStart"
     aria-labelledby="offcanvasExampleLabel"
   >
     <div className="offcanvas-header bg-danger-subtle">
@@ -42,7 +50,7 @@ const Navbar = () => {
         aria-label="Close"
       />
     </div>
-    <div className="offcanvas-body">
+    <div className="offcanvas-body" data-bs-dismiss="offcanvas">
       <div>
         <h5 className='text-light'>Frontend</h5>
       </div>
@@ -70,6 +78,8 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
+  </div>
+
   </div>
 </div>
 

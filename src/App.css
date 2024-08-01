@@ -6,6 +6,7 @@
 
 body{
     background: linear-gradient(225deg,#9D2577,#2D5A9E);
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -21,4 +22,31 @@ body{
 .list-group-item:hover{
     color:white;
     background-color: #9D2577 !important;
+}
+
+.home-body{
+    margin: 15rem 5rem !important;
+    animation: wave 10s infinite linear; 
+    border: 2px solid #9e9e2d;
+    padding: 1rem;
+   background-color: #ad5fe162;
+   box-shadow: 2px 2px 10px white;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0) skewY(0deg); /* Başlangıç pozisyonu */
+    }
+    25% {
+        transform: translateX(-10px) skewY(-5deg); /* Sol üst açı */
+    }
+    50% {
+        transform: translateX(0) skewY(0deg); /* Orta pozisyon */
+    }
+    75% {
+        transform: translateX(10px) skewY(5deg); /* Sağ alt açı */
+    }
+    100% {
+        transform: translateX(0) skewY(0deg); /* Başlangıç pozisyonu */
+    }
 }
